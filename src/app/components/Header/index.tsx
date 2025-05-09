@@ -58,7 +58,7 @@ export default function Header() {
                                 <button type="button" className="cursor-pointer text-left text-header-base text-header-base-hover">
                                     Log In
                                 </button>
-                                <button type="button" className="w-fit cursor-pointer text-left text-header-base btn-header-base-hover py-2 px-4 border-2 rounded-lg border-[#0F172A]">
+                                <button type="button" className="w-fit cursor-pointer text-left text-header-base btn-header-base-hover py-2 px-4 border-2 border-[#0F172A]">
                                     Sign Up Now
                                 </button>
                             </div>

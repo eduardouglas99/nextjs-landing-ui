@@ -6,7 +6,7 @@
 
 @layer components {
   .text-header-base {
-    @apply cursor-pointer text-base font-medium text-[#0F172A];
+    @apply cursor-pointer text-base font-medium text-[#0F172A] rounded-lg
   }
   .text-header-base-hover {
     @apply hover:opacity-75 transition-opacity transition-opacity
@@ -14,5 +14,21 @@
 
   .btn-header-base-hover {
     @apply hover:bg-[#0F172A] hover:text-white transition-colors
+  }
+
+  .primary-color {
+    @apply text-[#0F172A]
+  }
+
+  .bg-oragen-color {
+    @apply bg-[#EA580C]
+  }
+
+  .text-oragen-color {
+    @apply text-[#EA580C]
+  }
+
+  .blue {
+    @apply text-[#2563EB]
   }
 }
