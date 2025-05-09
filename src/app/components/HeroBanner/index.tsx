@@ -1,6 +1,7 @@
 import { Container } from "../Container";
 import Image from "next/image"
 import Link from "next/link"
+import ButtonSignUp from "../ButtonSignUp";
 
 export default function HeroBanner() {
     return (
@@ -27,9 +28,7 @@ export default function HeroBanner() {
                             </div>
 
                             <div className="flex flex-col sm:flex-row gap-10">
-                                <button type="button" className="w-[239px] cursor-pointer text-2xl text-white text-center text-header-base btn-header-base-hover py-4 rounded-lg bg-oragen-color border-[#0F172A]">
-                                    Sign Up Now
-                                </button>
+                                <ButtonSignUp title="Sign Up Now" className="w-[239px] text-2xl text-white py-4 bg-oragen-color border-[#0F172A]" />
                                 <Link href="#demo" className="inline-flex items-center blue text-xl font-medium gap-4 py-2">
                                     <Image
                                         src="/images/hero-banner/play-demo.svg"

@@ -9,7 +9,7 @@
     @apply cursor-pointer text-base font-medium text-[#0F172A] rounded-lg
   }
   .text-header-base-hover {
-    @apply hover:opacity-75 transition-opacity transition-opacity
+    @apply hover:opacity-75
   }
 
   .btn-header-base-hover {
