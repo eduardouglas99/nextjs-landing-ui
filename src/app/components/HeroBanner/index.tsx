@@ -6,16 +6,16 @@ import SectionTitle from "../SectionTitle";
 
 export default function HeroBanner() {
   return (
-    <Container className="flex items-center md:p-20">
+    <Container className="flex items-center py-12 pb-0 md:px-10 md:pt-20">
       <section className="w-full bg-white">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="container max-w-full w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div className="space-y-6">
               <div className="m-0">
                 <SectionTitle
                   words={["Teach ", " students", "worldwide"]}
                   underlineIndex={0}
-                  className="text-[40px] md:text-[72px] "
+                  className="text-[40px] md:text-[72px] leading-[110.00000000000001%]"
                 />
                 <p className="w-[99%] max-w-full text-[16px] md:text-[22px] tracking-normal primary-color font-normal my-6 md:my-8 leading-[140%] md:leading-[160%]">
                   Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin
@@ -93,7 +93,7 @@ export default function HeroBanner() {
               </div>
             </div>
 
-            <div className="relative">
+            <div className="relative pb-14 mx-auto">
               <Image
                 src="/images/hero-banner/hero-banner.png"
                 alt="Teach students worlwide"
