@@ -3,8 +3,32 @@ import Link from "next/link";
 import { Check, ArrowRight } from "lucide-react";
 import { Container } from "../Container";
 import SectionTitle from "../SectionTitle";
+import CardPromo from "../CardPromo";
 
 export default function AppPromo() {
+  const cardPromoInfos = [
+    {
+      label: "Featured",
+      color: "#6B21A8",
+      title: "The map of mathematics",
+      description:
+        "Egestas elit dui pellentesque ut augue aliquet vitae habitasse.",
+    },
+    {
+      label: "Popular",
+      color: "#1E40AF",
+      title: "Design for how people think",
+      description:
+        "Aliquam ut euismod consectetur elementum ultricies volutpat sit non.",
+    },
+    {
+      label: "New",
+      color: "#166534",
+      title: "International & commercial law",
+      description:
+        "Molestie integer eu arcu, mauris bibendum rhoncus imperdiet dui.",
+    },
+  ];
   return (
     <Container className="md:p-20">
       <section className="w-full bg-white overflow-hidden">
@@ -95,68 +119,20 @@ export default function AppPromo() {
               </div>
 
               <div className="absolute z-50 bottom-[20px] left-[40%] transform -translate-x-1/2 flex flex-col md:flex-row items-center justify-center gap-4 w-full md:max-w-[720px] mx-auto">
-                <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 w-[90%] md:w-[30%]"
-                    style={{ boxShadow: '0px 20px 25px -5px #0000001A' }}>
-                  <div className="p-4">
-                    <div className="text-xs font-medium text-orange-500 mb-2 bg-orange-50 w-fit px-2 py-1 rounded">
-                      Featured
-                    </div>
-                    <h3 className="font-semibold text-gray-900 mb-1">
-                      The map of mathematics
-                    </h3>
-                    <p className="text-xs text-gray-500">
-                      Egestas elit dui pellentesque ut augue aliquet vitae
-                      habitasse.
-                    </p>
-                  </div>
-                  <div className="px-4 pb-4">
-                    <button className="w-full py-2 text-sm text-center border border-gray-300 rounded hover:bg-gray-50 transition-colors">
-                      Take Lesson
-                    </button>
-                  </div>
-                </div>
-
-                <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 w-[90%] md:w-[30%]"
-                    style={{ boxShadow: '0px 20px 25px -5px #0000001A' }}>
-                  <div className="p-4">
-                    <div className="text-xs font-medium text-blue-500 mb-2 bg-blue-50 w-fit px-2 py-1 rounded">
-                      Popular
-                    </div>
-                    <h3 className="font-semibold text-gray-900 mb-1">
-                      Design for how people think
-                    </h3>
-                    <p className="text-xs text-gray-500">
-                      Aliquam ut euismod consectetur elementum ultricies
-                      volutpat sit non.
-                    </p>
-                  </div>
-                  <div className="px-4 pb-4">
-                    <button className="w-full py-2 text-sm text-center border border-gray-300 rounded hover:bg-gray-50 transition-colors">
-                      Take Lesson
-                    </button>
-                  </div>
-                </div>
-
-                <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 w-[90%] md:w-[30%]"
-                    style={{ boxShadow: '0px 20px 25px -5px #0000001A' }}>
-                  <div className="p-4">
-                    <div className="text-xs font-medium text-green-500 mb-2 bg-green-50 w-fit px-2 py-1 rounded">
-                      New
-                    </div>
-                    <h3 className="font-semibold text-gray-900 mb-1">
-                      International & commercial law
-                    </h3>
-                    <p className="text-xs text-gray-500">
-                      Molestie integer eu arcu, mauris bibendum rhoncus
-                      imperdiet dui.
-                    </p>
-                  </div>
-                  <div className="px-4 pb-4">
-                    <button className="w-full py-2 text-sm text-center border border-gray-300 rounded hover:bg-gray-50 transition-colors">
-                      Take Lesson
-                    </button>
-                  </div>
-                </div>
+                {cardPromoInfos &&
+                  cardPromoInfos.map(
+                    ({ color, description, label, title }, id) => (
+                      <CardPromo
+                        key={id}
+                        title={title}
+                        ariaLabel="Take Lesson"
+                        buttonName="Take Lesson"
+                        description={description}
+                        color={color}
+                        label={label}
+                      />
+                    )
+                  )}
               </div>
             </div>
           </div>
