@@ -11,7 +11,7 @@ export default function HeroBanner() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                         <div className="space-y-6">
                             <div className="m-0">
-                                <h1 className="text-[40px] md:text-[72px] font-extrabold text-slate-900 tracking-tight">
+                                <h1 className="text-[40px] md:text-[72px] font-extrabold text-slate-900 tracking-tight leading-[110.00000000000001%]">
                                     <span className="inline-block relative">
                                         <span className="relative z-10">Teach</span>
                                         <img
@@ -22,13 +22,13 @@ export default function HeroBanner() {
                                     </span>{' '}
                                     students <span className="block">worldwide</span>
                                 </h1>
-                                <p className="w-[99%] max-w-full text-base md:text-2xl tracking-normal primary-color font-normal my-6 md:my-8">
+                                <p className="w-[99%] max-w-full text-[16px] md:text-[22px] tracking-normal primary-color font-normal my-6 md:my-8 leading-[140%] md:leading-[160%]">
                                     Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis ultricies.
                                 </p>
                             </div>
 
                             <div className="flex flex-row sm:flex-row gap-4 md:gap-10 justify-between">
-                                <ButtonSignUp title="Sign Up Now" className="w-[40%] max-w-full md:w-[239px] text-base md:text-2xl text-white py-4 bg-oragen-color border-[#0F172A]" ariaLabel="Sign up now" />
+                                <ButtonSignUp title="Sign Up Now" className="w-[40%] max-w-full md:w-[220px] text-[16px] md:text-[18px] text-white py-4 bg-oragen-color border-[#0F172A]" ariaLabel="Sign up now" />
                                 <Link href="#demo" className="w-[50%] max-w-full inline-flex items-center blue text-base md:text-xl font-medium gap-4 py-2">
                                     <Image
                                         src="/images/hero-banner/play-demo.svg"
