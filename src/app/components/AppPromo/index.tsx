@@ -97,7 +97,7 @@ export default function AppPromo() {
                 alt="Yellow points"
                 width={139}
                 height={582}
-                className="absolute z-20 h-[510px] lg:left-[-32%] top-0 hidden sm:block"
+                className="absolute z-20 h-[510px] left-[30%] lg:left-[-32%] top-[-12%] lg:top-0 sm:block"
               />
 
               <Image
@@ -105,7 +105,7 @@ export default function AppPromo() {
                 alt="Blob"
                 width={506}
                 height={448}
-                className="absolute z-10 h-[390px] lg:left-[-170px] bottom-5 -rotate-[calc(345deg)] hidden sm:block"
+                className="absolute z-10 h-[390px] top-[30px] lg:top-0 left-[-150px] lg:left-[-170px] bottom-5 -rotate-[calc(345deg)] sm:block"
               />
 
               <div className="relative z-30 rounded-lg overflow-hidden md:h-[500px] max-w-[600px] mx-auto">
@@ -118,7 +118,7 @@ export default function AppPromo() {
                 />
               </div>
 
-              <div className="absolute z-50 bottom-[20px] left-[40%] transform -translate-x-1/2 flex flex-col md:flex-row items-center justify-center gap-4 w-full md:max-w-[720px] mx-auto">
+              <div className="relative lg:absolute z-50 bottom-[20px] left-0 lg:left-[40%] transform -translate-y-[60px] md:-translate-y-[80%] lg:-translate-y-0 lg:-translate-x-1/2 flex md:flex-row items-stretch justify-center flex-wrap lg:flex-nowrap gap-2.5 lg:gap-4 w-full md:max-w-[720px] mx-auto">
                 {cardPromoInfos &&
                   cardPromoInfos.map(
                     ({ color, description, label, title }, id) => (
@@ -130,6 +130,11 @@ export default function AppPromo() {
                         description={description}
                         color={color}
                         label={label}
+                        className={
+                          id === cardPromoInfos.length - 1
+                            ? "hidden sm:block"
+                            : ""
+                        }
                       />
                     )
                   )}
