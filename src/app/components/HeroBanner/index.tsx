@@ -13,8 +13,9 @@ export default function HeroBanner() {
             <div className="space-y-6">
               <div className="m-0">
                 <SectionTitle
-                  words={["Teach", "students", "worldwide"]}
+                  words={["Teach ", " students", "worldwide"]}
                   underlineIndex={0}
+                  className="text-[40px] md:text-[72px] "
                 />
                 <p className="w-[99%] max-w-full text-[16px] md:text-[22px] tracking-normal primary-color font-normal my-6 md:my-8 leading-[140%] md:leading-[160%]">
                   Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin
