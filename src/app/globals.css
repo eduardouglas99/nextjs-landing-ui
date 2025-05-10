@@ -12,6 +12,10 @@
     @apply hover:opacity-75 focus:opacity-75 hover:underline focus:underline transition-opacity
   }
 
+  .text-testimonial {
+    @apply text-xl text-[#0F172A] leading-[160%]
+  }
+
   .btn-header-base-hover {
     @apply hover:bg-[#0F172A] hover:text-white focus:bg-[#0F172A] focus:text-white  transition-colors 
   }

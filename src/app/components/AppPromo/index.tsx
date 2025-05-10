@@ -30,7 +30,7 @@ export default function AppPromo() {
     },
   ];
   return (
-    <Container className="py-12 pb-0 md:px-10 md:pt-20">
+    <Container className="py-12 pb-0 md:px-10 md:py-20">
       <section className="w-full bg-white overflow-hidden">
         <div className="container mx-auto relative">
           <div className="flex flex-col lg:flex-row items-center relative z-10 lg:gap-x-12">
