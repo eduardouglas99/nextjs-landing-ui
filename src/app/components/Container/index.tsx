@@ -8,7 +8,7 @@ interface ContainerProps {
 
 export function Container({ children, className }: ContainerProps) {
     return (
-        <div className={twMerge("w-full max-w-[1280px] mx-auto", className)}>
+        <div className={twMerge("w-full max-w-[1280px] mx-auto py-12 px-4", className)}>
             {children}
         </div>
     )

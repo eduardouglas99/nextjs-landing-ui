@@ -9,11 +9,11 @@
     @apply cursor-pointer text-base font-medium text-[#0F172A] rounded-lg
   }
   .text-header-base-hover {
-    @apply hover:opacity-75
+    @apply hover:opacity-75 focus:opacity-75 transition-opacity
   }
 
   .btn-header-base-hover {
-    @apply hover:bg-[#0F172A] hover:text-white transition-colors
+    @apply hover:bg-[#0F172A] hover:text-white focus:bg-[#0F172A] focus:text-white  transition-colors 
   }
 
   .primary-color {

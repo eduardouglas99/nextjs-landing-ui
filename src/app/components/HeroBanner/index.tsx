@@ -5,13 +5,13 @@ import ButtonSignUp from "../ButtonSignUp";
 
 export default function HeroBanner() {
     return (
-        <Container className="flex items-center p-20 ">
+        <Container className="flex items-center md:p-20">
             <section className="w-full bg-white">
                 <div className="container mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                         <div className="space-y-6">
                             <div className="m-0">
-                                <h1 className="text-4xl md:text-7xl font-extrabold text-slate-900 tracking-tight">
+                                <h1 className="text-[40px] md:text-[72px] font-extrabold text-slate-900 tracking-tight">
                                     <span className="inline-block relative">
                                         <span className="relative z-10">Teach</span>
                                         <img
@@ -22,14 +22,14 @@ export default function HeroBanner() {
                                     </span>{' '}
                                     students <span className="block">worldwide</span>
                                 </h1>
-                                <p className="w-[99%] max-w-full text-2xl tracking-normal primary-color font-normal my-8">
+                                <p className="w-[99%] max-w-full text-base md:text-2xl tracking-normal primary-color font-normal my-6 md:my-8">
                                     Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis ultricies.
                                 </p>
                             </div>
 
-                            <div className="flex flex-col sm:flex-row gap-10">
-                                <ButtonSignUp title="Sign Up Now" className="w-[239px] text-2xl text-white py-4 bg-oragen-color border-[#0F172A]" />
-                                <Link href="#demo" className="inline-flex items-center blue text-xl font-medium gap-4 py-2">
+                            <div className="flex flex-row sm:flex-row gap-4 md:gap-10 justify-between">
+                                <ButtonSignUp title="Sign Up Now" className="w-[40%] max-w-full md:w-[239px] text-base md:text-2xl text-white py-4 bg-oragen-color border-[#0F172A]" ariaLabel="Sign up now" />
+                                <Link href="#demo" className="w-[50%] max-w-full inline-flex items-center blue text-base md:text-xl font-medium gap-4 py-2">
                                     <Image
                                         src="/images/hero-banner/play-demo.svg"
                                         alt="Play demo"
@@ -41,8 +41,8 @@ export default function HeroBanner() {
                                 </Link>
                             </div>
 
-                            <div className="flex items-center gap-12 mt-20">
-                                <p className="text-base text-[#475569]">Trusted by <span className="block"> leading companies</span></p>
+                            <div className="flex md:items-center gap-4 md:gap-12 mt-8 md:mt-20 flex-col md:flex-row justify-baseline mb-12">
+                                <p className="text-base text-[#475569]">Trusted by <span className="md:block">leading companies</span></p>
                                 <div className="flex gap-6 items-center">
                                     <Image
                                         src="/images/hero-banner/black-and-white-collection/ci-cd.svg"

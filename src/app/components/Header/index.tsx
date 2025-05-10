@@ -59,7 +59,7 @@ export default function Header() {
                                 <button type="button" className="cursor-pointer text-left text-header-base text-header-base-hover">
                                     Log In
                                 </button>
-                                <ButtonSignUp title="Sign Up Now" className="w-fit py-2 px-4 border-2 border-[#0F172A]" />
+                                <ButtonSignUp title="Sign Up Now" className="w-fit py-2 px-4 border-2 border-[#0F172A]" ariaLabel="Sign up now" />
                             </div>
                         </div>
                     </div>
