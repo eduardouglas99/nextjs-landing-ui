@@ -2,7 +2,7 @@ import { twMerge } from "tailwind-merge";
 
 interface SectionTitleProps {
   words: string[];
-  underlineIndex: number;
+  underlineIndex?: number;
   underlineImageSrc?: string;
   className?: string
 }

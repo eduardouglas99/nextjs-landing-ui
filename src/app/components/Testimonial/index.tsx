@@ -40,7 +40,7 @@ const testimonials = [
 export default function Testimonial() {
   return (
     <div className="w-full bg-yellow-400 relative">
-      <Container className="py-12 pb-0 md:px-10 md:pt-20 overflow-hidden">
+      <Container className="py-12 md:px-10 md:pt-20 md:pb-20 overflow-hidden">
         <Swiper
           modules={[Navigation, Pagination, Autoplay, EffectFade]}
           spaceBetween={30}
