@@ -29,7 +29,7 @@ export default function HeroBanner() {
 
                             <div className="flex flex-row sm:flex-row gap-4 md:gap-10 justify-between">
                                 <ButtonSignUp title="Sign Up Now" className="w-[40%] max-w-full md:w-[220px] text-[16px] md:text-[18px] text-white py-4 bg-oragen-color border-[#0F172A]" ariaLabel="Sign up now" />
-                                <Link href="#demo" className="w-[50%] max-w-full inline-flex items-center blue text-base md:text-xl font-medium gap-4 py-2">
+                                <Link href="#demo" className="w-[50%] max-w-full inline-flex items-center blue text-base md:text-xl font-medium gap-4 py-2 text-header-base-hover">
                                     <Image
                                         src="/images/hero-banner/play-demo.svg"
                                         alt="Play demo"
