@@ -120,5 +120,9 @@
     "terms": "Terms",
     "privacy": "Privacy",
     "contact": "Contact"
+  },
+   "404": {
+    "title": "Page Not Found",
+    "home": "Go Home"
   }
 }

@@ -123,5 +123,9 @@
     "terms": "Termos",
     "privacy": "Privacidade",
     "contact": "Contato"
+  },
+  "404": {
+    "title": "Página Não Encontrada",
+    "home": "Ir Para Home"
   }
 }
