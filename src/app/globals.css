@@ -20,8 +20,16 @@
     @apply hover:bg-[#0F172A] hover:text-white focus:bg-[#0F172A] focus:text-white  transition-colors 
   }
 
+  .btn-form-hover {
+    @apply hover:bg-[#3f1702] focus:bg-[#3f1702]  transition-colors 
+  }
+
   .primary-color {
     @apply text-[#0F172A]
+  }
+
+  .bg-primary-color {
+    @apply bg-[#0F172A]
   }
 
   .bg-oragen-color {
