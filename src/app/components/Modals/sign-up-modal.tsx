@@ -4,7 +4,7 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
-import { CircleCheckBig } from 'lucide-react';
+import { CircleCheckBig, Delete } from "lucide-react";
 
 const formSchema = z.object({
   fullname: z
@@ -43,9 +43,9 @@ export default function SignUpModal({ onClose }: SignUpModalProps) {
   };
 
   return (
-    <div className="fixed inset-0 bg-[#000000b8] bg-opacity-50 z-50 flex items-center justify-center px-4">
+    <div className="fixed inset-0 bg-[#000000c9] bg-opacity-50 z-50 flex items-center justify-center px-4">
       <div className="bg-white text-left rounded-xl max-w-lg w-full p-9 relative">
-        <button className="absolute top-4 right-4 text-black" onClick={onClose}>
+        <button className="cursor-pointer absolute top-4 right-4 primary-color text-2xl" onClick={onClose}>
           ✕
         </button>
 
@@ -127,16 +127,17 @@ export default function SignUpModal({ onClose }: SignUpModalProps) {
           </>
         ) : (
           <div className="text-center flex flex-col items-center">
-            <CircleCheckBig size={50} color="green" className="mb-5"/>
+            <CircleCheckBig size={50} color="green" className="mb-5" />
             <h2 className="text-2xl font-bold mb-4 mx-auto primary-color text-center">
               Registration Successful!
             </h2>
             <h3 className="primary-color my-2 text-base font-normal text-center">
-              Thank you for signing up! We've sent a confirmation email to your address.
+              Thank you for signing up! We've sent a confirmation email to your
+              address.
             </h3>
             <button
               onClick={onClose}
-            className="cursor-pointer py-3.5 m-5 max-w-[30%] w-full  bg-oragen-color text-white font-semibold rounded-lg hover:opacity-90 transition"
+              className="cursor-pointer py-3.5 mt-5 max-w-[200px] w-full bg-oragen-color text-white font-semibold rounded-lg hover:opacity-90 transition"
               aria-label="Close"
             >
               Close
