@@ -46,7 +46,7 @@ export default function AppPromo() {
                   "easier",
                 ]}
                 underlineIndex={1}
-                className="text-[52px] font-extrabold leading-[110.00000000000001%] w-[93%] max-w-full p-0 m-0"
+                className="md:font-extrabold leading-[110.00000000000001%] w-[93%] max-w-full p-0 m-0"
               />
 
               <ul className="space-y-3 pb-0 m-0 my-8">

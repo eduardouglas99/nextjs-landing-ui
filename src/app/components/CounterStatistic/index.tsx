@@ -28,7 +28,7 @@ export default function CounterStatistic() {
   return (
     <div className="bg-[#0F172A] ">
       <Container className="py-12 md:px-10 md:py-20">
-        <div className="gap-10 sm:gap-0 flex-col sm:flex-row flex justify-between">
+        <div className="gap-10 sm:gap-0 flex-col sm:flex-row flex justify-around">
           {statistic &&
             statistic.map(({ icon, text, value, iconName, suffix }, id) => (
               <div key={id} className="gap-2 sm:gap-4 flex flex-col items-center">

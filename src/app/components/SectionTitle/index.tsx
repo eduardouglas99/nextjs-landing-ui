@@ -14,7 +14,7 @@ export default function SectionTitle({
   className
 }: SectionTitleProps) {
   return (
-    <h1 className={twMerge("font-extrabold text-slate-900 tracking-tight leading-[110%] flex flex-wrap gap-x-2", className)}>
+    <h1 className={twMerge("text-[32px] font-bold md:text-[56px] sm:font-extrabold text-slate-900 tracking-tight leading-[110%] flex flex-wrap gap-x-1 md:gap-x-2", className)}>
       {words.map((word, index) => (
         <span key={index} className="relative inline-block mr-2">
           {index === underlineIndex ? (

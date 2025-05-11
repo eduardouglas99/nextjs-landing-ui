@@ -102,7 +102,7 @@ export default function MeetTheCommunity() {
         <div className="space-y-8 flex-1 lg:max-w-[50%] lg:pr-16 lg:order-2">
           <SectionTitle
             words={["Meet", "international", "students", "&", "teachers"]}
-            className="text-[52px] font-extrabold leading-[110.00000000000001%] w-[93%] max-w-full p-0 m-0"
+            className="md:font-extrabold leading-[110.00000000000001%] w-[93%] max-w-full p-0 m-0"
           />
           <p className="primary-color my-6 sm:my-8 text-base sm:font-normal leading-[140%] sm:leading-[180%]">
             Morbi sit egestas dignissim pharetra, sed amet. Tempus justo

@@ -3,6 +3,7 @@ import CounterStatistic from "./components/CounterStatistic";
 import HeroBanner from "./components/HeroBanner";
 import MeetTheCommunity from "./components/MeetTheCommunity";
 import Testimonial from "./components/Testimonial";
+import WhatEveryoneSays from "./components/WhatEveryoneSays";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Testimonial />
       <MeetTheCommunity />
       <CounterStatistic />
+      <WhatEveryoneSays />
     </>
   );
 }
