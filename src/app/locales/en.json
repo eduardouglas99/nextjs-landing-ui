@@ -1,0 +1,103 @@
+{
+  "links": {
+    "products": "Products",
+    "solutions": "Solutions",
+    "pricing": "Pricing",
+    "resources": "Resources",
+    "webinars": "Webinars",
+    "guides": "Guides",
+    "signup_now": "Sign Up Now"
+  },
+  "hero": {
+    "title_line1": "Teach",
+    "title_underline": "underline",
+    "subtitle_line1": "students",
+    "subtitle_line2": "worldwide",
+    "description": "Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis ultricies.",
+    "signup_button": "Sign Up Now",
+    "play_demo": "Play demo"
+  },
+  "trusted_by": {
+    "title": "Trusted by",
+    "subtitle": "leading companies"
+  },
+  "app_promo": {
+    "title_start": "An",
+    "title_underline": "all-in-one",
+    "title_end": "app that makes it easier",
+    "description_1": "Est et in pharetra magna adipiscing ornare aliquam.",
+    "description_2": "Tellus arcu sed consequat ac velit ut eu blandit.",
+    "description_3": "Ullamcorper ornare in et egestas dolor orci.",
+    "cta": "Find more about the app"
+  },
+  "carousel": {
+    "text": "Vestibulum sed metus eu orci pulvinar vehicula. Nullam feugiat nulla ut ligula tempor aliquam. Vivamus non molestie eros, vel gravida sapien."
+  },
+  "meet": {
+    "title_1": "Meet",
+    "title_2": "international",
+    "title_3": "students & teachers",
+    "description": "Morbi sit egestas dignissim pharetra, sed amet. Tempus justo senectus risus ac vel, velit, nunc. Eget commodo eget in aliquam facilisi facilisi nec magna hendrerit. Placerat ipsum sit tellus urna, faucibus aenean lorem faucibus integer.",
+    "cta": "Explore teachers and students"
+  },
+  "counter": {
+    "heart": {
+      "label": "user countries",
+      "value": "195"
+    },
+    "diamond": {
+      "label": "valued teachers",
+      "value": "1M"
+    },
+    "school": {
+      "label": "happy students",
+      "value": "17M"
+    }
+  },
+  "testimonials": {
+    "title": "What everyone says:",
+    "description": "Sagittis nunc egestas leo et malesuada urna risus. Morbi proin et cras aliquam. Diam tellus, amet, hac imperdiet. Tellus mi volutpat tellus, congue malesuada sit nisl donec a."
+  },
+  "form": {
+    "title": "Ready for your next project?",
+    "subtitle": "Sit elit feugiat turpis sed integer integer accumsan turpis.",
+    "email_label": "Email",
+    "email_placeholder": "Enter your email",
+    "message_label": "Message",
+    "message_placeholder": "What are you say?",
+    "button": "Request demo"
+  },
+  "footer": {
+    "teach": "Teach",
+    "product": "Product",
+    "pricing": "Pricing",
+    "overview": "Overview",
+    "browse": "Browse",
+    "accessibility": "Accessibility",
+    "beta": "BETA",
+    "solutions": "Solutions",
+    "brainstorming": "Brainstorming",
+    "ideation": "Ideation",
+    "wireframing": "Wireframing",
+    "research": "Research",
+    "resources": "Resources",
+    "helpcenter": "Help Center",
+    "blog": "Blog",
+    "tutorials": "Tutorials",
+    "faqs": "FAQs",
+    "support": "Support",
+    "contactus": "Contact Us",
+    "developers": "Developers",
+    "documentation": "Documentation",
+    "integrations": "Integrations",
+    "company": "Company",
+    "about": "About",
+    "press": "Press",
+    "events": "Events",
+    "requestdemo": "Request Demo",
+    "rights": "All rights reserved.",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "contact": "Contact"
+  }
+}

@@ -1,10 +1,13 @@
+"use client";
 import Link from "next/link";
 import { ArrowRight, Globe, Euro, Info } from "lucide-react";
 import Image from "next/image";
 import { Container } from "../Container";
-
+import { LanguageCurrencySwitcher } from "../language-currency-switcher";
+import { useLocalization } from "../localization-provider";
 
 export function Footer() {
+  const { t } = useLocalization();
   return (
     <footer className="bg-primary-color text-white">
       <Container className="pt-12 pb-9 md:px-10 md:py-20">
@@ -21,14 +24,14 @@ export function Footer() {
             </div>
 
             <div className="lg:col-span-1">
-              <h3 className="font-medium text-lg mb-4">Product</h3>
+              <h3 className="font-medium text-lg mb-4">{t("footer.product")}</h3>
               <ul className="space-y-3">
                 <li>
                   <Link
                     href="/pricing"
                     className="text-gray-300 hover:text-white  text-header-base-hover transition-colors"
                   >
-                    Pricing
+                        {t("footer.pricing")}
                   </Link>
                 </li>
                 <li>
@@ -36,7 +39,7 @@ export function Footer() {
                     href="/overview"
                     className="text-gray-300 hover:text-white  text-header-base-hover transition-colors"
                   >
-                    Overview
+                  {t("footer.overview")}
                   </Link>
                 </li>
                 <li>
@@ -44,7 +47,7 @@ export function Footer() {
                     href="/browse"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-                    Browse
+              {t("footer.browse")}
                   </Link>
                 </li>
                 <li>
@@ -54,7 +57,7 @@ export function Footer() {
                   >
                     Accessibility
                     <span className="ml-2 text-xs bg-white text-purple-600 px-1.5 py-0.5 rounded">
-                      BETA
+                    {t("footer.beta")}
                     </span>
                   </Link>
                 </li>
@@ -62,14 +65,14 @@ export function Footer() {
             </div>
 
             <div className="lg:col-span-1">
-              <h3 className="font-medium text-lg mb-4">Solutions</h3>
+              <h3 className="font-medium text-lg mb-4">     {t("footer.solutions")}</h3>
               <ul className="space-y-3">
                 <li>
                   <Link
                     href="/brainstorming"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-                    Brainstorming
+                   {t("footer.brainstorming")}
                   </Link>
                 </li>
                 <li>
@@ -77,7 +80,7 @@ export function Footer() {
                     href="/ideation"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-                    Ideation
+                {t("footer.ideation")}
                   </Link>
                 </li>
                 <li>
@@ -85,7 +88,7 @@ export function Footer() {
                     href="/wireframing"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-                    Wireframing
+      {t("footer.wireframing")}
                   </Link>
                 </li>
                 <li>
@@ -93,7 +96,7 @@ export function Footer() {
                     href="/research"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-                    Research
+                 {t("footer.research")}
                   </Link>
                 </li>
               </ul>
@@ -107,7 +110,7 @@ export function Footer() {
                     href="/help-center"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-                    Help Center
+                   {t("footer.helpcenter")}
                   </Link>
                 </li>
                 <li>
@@ -115,7 +118,7 @@ export function Footer() {
                     href="/blog"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-                    Blog
+                  {t("footer.blog")}
                   </Link>
                 </li>
                 <li>
@@ -123,7 +126,7 @@ export function Footer() {
                     href="/tutorials"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-                    Tutorials
+                       {t("footer.tutorials")}
                   </Link>
                 </li>
                 <li>
@@ -131,21 +134,21 @@ export function Footer() {
                     href="/faqs"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-                    FAQs
+                 {t("footer.faqs")}
                   </Link>
                 </li>
               </ul>
             </div>
 
             <div className="lg:col-span-1">
-              <h3 className="font-medium text-lg mb-4">Support</h3>
+              <h3 className="font-medium text-lg mb-4">              {t("footer.support")}</h3>
               <ul className="space-y-3">
                 <li>
                   <Link
                     href="/contact"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-                    Contact Us
+                     {t("footer.contactus")}
                   </Link>
                 </li>
                 <li>
@@ -153,7 +156,7 @@ export function Footer() {
                     href="/developers"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-                    Developers
+            {t("footer.developers")}
                   </Link>
                 </li>
                 <li>
@@ -161,7 +164,7 @@ export function Footer() {
                     href="/documentation"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-                    Documentation
+             {t("footer.documentation")}
                   </Link>
                 </li>
                 <li>
@@ -169,21 +172,21 @@ export function Footer() {
                     href="/integrations"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-                    Integrations
+         {t("footer.integrations")}
                   </Link>
                 </li>
               </ul>
             </div>
 
             <div className="lg:col-span-1">
-              <h3 className="font-medium text-lg mb-4">Company</h3>
+              <h3 className="font-medium text-lg mb-4">      {t("footer.company")}</h3>
               <ul className="space-y-3">
                 <li>
                   <Link
                     href="/about"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-                    About
+     {t("footer.about")}
                   </Link>
                 </li>
                 <li>
@@ -191,7 +194,7 @@ export function Footer() {
                     href="/press"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-                    Press
+          {t("footer.press")}
                   </Link>
                 </li>
                 <li>
@@ -199,7 +202,7 @@ export function Footer() {
                     href="/events"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-                    Events
+         {t("footer.events")}
                   </Link>
                 </li>
                 <li>
@@ -207,7 +210,7 @@ export function Footer() {
                     href="/request-demo"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors flex items-center"
                   >
-                    Request Demo
+               {t("footer.requestdemo")}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </li>
@@ -221,38 +224,28 @@ export function Footer() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              uteach © {new Date().getFullYear()}. All rights reserved.
+              uteach © {new Date().getFullYear()}. {t("footer.rights")}
             </div>
             <div className="flex items-center space-x-6">
               <Link
                 href="/terms"
                 className="text-gray-400 hover:text-white  text-header-base-hover text-sm transition-colors"
               >
-                Terms
+  {t("footer.terms")}
               </Link>
               <Link
                 href="/privacy"
                 className="text-gray-400 hover:text-white  text-header-base-hover text-sm transition-colors"
               >
-                Privacy
+                {t("navigation.privacy")}
               </Link>
               <Link
                 href="/contact"
                 className="text-gray-400 hover:text-white  text-header-base-hover text-sm transition-colors"
               >
-                Contact
+              {t("footer.contact")}
               </Link>
-              <button className="text-gray-400 hover:text-white  text-header-base-hover text-sm flex items-center transition-colors">
-                <Globe className="h-4 w-4 mr-1" />
-                EN
-              </button>
-              <button className="text-gray-400 hover:text-white  text-header-base-hover text-sm flex items-center transition-colors">
-                <Euro className="h-4 w-4 mr-1" />
-                EUR
-              </button>
-              <button className="text-gray-400 hover:text-white  text-header-base-hover text-sm transition-colors">
-                <Info className="h-4 w-4" />
-              </button>
+              <LanguageCurrencySwitcher />
             </div>
           </div>
         </div>

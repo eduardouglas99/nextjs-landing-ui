@@ -1,0 +1,104 @@
+{
+  "links": {
+    "products": "Produtos",
+    "solutions": "Soluções",
+    "pricing": "Preços",
+    "resources": "Recursos",
+    "webinars": "Webinars",
+    "guides": "Guias",
+    "signup_now": "Inscreva-se agora"
+  },
+  "hero": {
+    "title_line1": "Ensine",
+    "title_underline": "sublinhado",
+    "subtitle_line1": "alunos",
+    "subtitle_line2": "no mundo todo",
+    "description": "Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis ultricies.",
+    "signup_button": "Inscreva-se agora",
+    "play_demo": "Ver demonstração"
+  },
+  "trusted_by": {
+    "title": "Confiado por",
+    "subtitle": "principais empresas"
+  },
+  "app_promo": {
+    "title_start": "Um",
+    "title_underline": "aplicativo tudo-em-um",
+    "title_end": "que facilita tudo",
+    "description_1": "Est et in pharetra magna adipiscing ornare aliquam.",
+    "description_2": "Tellus arcu sed consequat ac velit ut eu blandit.",
+    "description_3": "Ullamcorper ornare in et egestas dolor orci.",
+    "cta": "Saiba mais sobre o aplicativo"
+  },
+  "carousel": {
+    "text": "Vestibulum sed metus eu orci pulvinar vehicula. Nullam feugiat nulla ut ligula tempor aliquam. Vivamus non molestie eros, vel gravida sapien."
+  },
+  "meet": {
+    "title_1": "Conheça",
+    "title_2": "estudantes",
+    "title_3": "e professores internacionais",
+    "description": "Morbi sit egestas dignissim pharetra, sed amet. Tempus justo senectus risus ac vel, velit, nunc. Eget commodo eget in aliquam facilisi facilisi nec magna hendrerit. Placerat ipsum sit tellus urna, faucibus aenean lorem faucibus integer.",
+    "cta": "Explorar professores e estudantes"
+  },
+  "counter": {
+    "heart": {
+      "label": "países com usuários",
+      "value": "195"
+    },
+    "diamond": {
+      "label": "professores valorizados",
+      "value": "1M"
+    },
+    "school": {
+      "label": "alunos felizes",
+      "value": "17M"
+    }
+  },
+  "testimonials": {
+    "title": "O que todos dizem:",
+    "description": "Sagittis nunc egestas leo et malesuada urna risus. Morbi proin et cras aliquam. Diam tellus, amet, hac imperdiet. Tellus mi volutpat tellus, congue malesuada sit nisl donec a."
+  },
+  "form": {
+    "title": "Pronto para seu próximo projeto?",
+    "subtitle": "Sit elit feugiat turpis sed integer integer accumsan turpis.",
+    "email_label": "Email",
+    "email_placeholder": "Digite seu email",
+    "message_label": "Mensagem",
+    "message_placeholder": "O que você quer dizer?",
+    "button": "Solicitar demonstração"
+  },
+
+"footer": {
+    "teach": "Ensinar",
+    "product": "Produto",
+    "pricing": "Preços",
+    "overview": "Visão geral",
+    "browse": "Explorar",
+    "accessibility": "Acessibilidade",
+    "beta": "BETA",
+    "solutions": "Soluções",
+    "brainstorming": "Brainstorming",
+    "ideation": "Ideação",
+    "wireframing": "Wireframing",
+    "research": "Pesquisa",
+    "resources": "Recursos",
+    "helpcenter": "Central de Ajuda",
+    "blog": "Blog",
+    "tutorials": "Tutoriais",
+    "faqs": "FAQs",
+    "support": "Suporte",
+    "contactus": "Fale Conosco",
+    "developers": "Desenvolvedores",
+    "documentation": "Documentação",
+    "integrations": "Integrações",
+    "company": "Empresa",
+    "about": "Sobre",
+    "press": "Imprensa",
+    "events": "Eventos",
+    "requestdemo": "Solicitar Demonstração",
+    "rights": "Todos os direitos reservados.",
+    "terms": "Termos",
+    "privacy": "Privacidade",
+    "contact": "Contato"
+  }
+}
