@@ -7,7 +7,7 @@ interface CardPromoProps {
   description: string;
   buttonName: string;
   ariaLabel: string;
-  className: string;
+  className?: string;
 }
 
 export default function ButtonSignUp({

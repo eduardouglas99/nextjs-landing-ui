@@ -57,7 +57,7 @@ export default function CoolFeatures() {
                 alt="Blob"
                 width={506}
                 height={448}
-                className="absolute z-10 h-[507px] top-0 lg:top-[30px] left-[-150px] lg:left-[-80px] bottom-5 -rotate-[calc(340deg)] sm:block overflow-visible"
+                className="absolute z-10 h-[507px] top-0 lg:top-[30px] left-0 lg:left-[-80px] bottom-5 -rotate-[calc(340deg)] sm:block overflow-visible"
               />
 
               <div className="grid grid-rows-2 gap-2.5 max-h-[540px] h-full mt-14">
@@ -74,11 +74,6 @@ export default function CoolFeatures() {
                             description={description}
                             color={color}
                             label={label}
-                            className={
-                              id === cardPromoInfos.length - 1
-                                ? "hidden sm:block"
-                                : ""
-                            }
                           />
                         )
                       )}
