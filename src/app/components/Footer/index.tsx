@@ -24,14 +24,16 @@ export function Footer() {
             </div>
 
             <div className="lg:col-span-1">
-              <h3 className="font-medium text-lg mb-4">{t("footer.product")}</h3>
+              <h3 className="font-medium text-lg mb-4">
+                {t("footer.product")}
+              </h3>
               <ul className="space-y-3">
                 <li>
                   <Link
                     href="/pricing"
                     className="text-gray-300 hover:text-white  text-header-base-hover transition-colors"
                   >
-                        {t("footer.pricing")}
+                    {t("footer.pricing")}
                   </Link>
                 </li>
                 <li>
@@ -39,7 +41,7 @@ export function Footer() {
                     href="/overview"
                     className="text-gray-300 hover:text-white  text-header-base-hover transition-colors"
                   >
-                  {t("footer.overview")}
+                    {t("footer.overview")}
                   </Link>
                 </li>
                 <li>
@@ -47,7 +49,7 @@ export function Footer() {
                     href="/browse"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-              {t("footer.browse")}
+                    {t("footer.browse")}
                   </Link>
                 </li>
                 <li>
@@ -57,7 +59,7 @@ export function Footer() {
                   >
                     Accessibility
                     <span className="ml-2 text-xs bg-white text-purple-600 px-1.5 py-0.5 rounded">
-                    {t("footer.beta")}
+                      {t("footer.beta")}
                     </span>
                   </Link>
                 </li>
@@ -65,14 +67,17 @@ export function Footer() {
             </div>
 
             <div className="lg:col-span-1">
-              <h3 className="font-medium text-lg mb-4">     {t("footer.solutions")}</h3>
+              <h3 className="font-medium text-lg mb-4">
+                {" "}
+                {t("footer.solutions")}
+              </h3>
               <ul className="space-y-3">
                 <li>
                   <Link
                     href="/brainstorming"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-                   {t("footer.brainstorming")}
+                    {t("footer.brainstorming")}
                   </Link>
                 </li>
                 <li>
@@ -80,7 +85,7 @@ export function Footer() {
                     href="/ideation"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-                {t("footer.ideation")}
+                    {t("footer.ideation")}
                   </Link>
                 </li>
                 <li>
@@ -88,7 +93,7 @@ export function Footer() {
                     href="/wireframing"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-      {t("footer.wireframing")}
+                    {t("footer.wireframing")}
                   </Link>
                 </li>
                 <li>
@@ -96,7 +101,7 @@ export function Footer() {
                     href="/research"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-                 {t("footer.research")}
+                    {t("footer.research")}
                   </Link>
                 </li>
               </ul>
@@ -110,7 +115,7 @@ export function Footer() {
                     href="/help-center"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-                   {t("footer.helpcenter")}
+                    {t("footer.helpcenter")}
                   </Link>
                 </li>
                 <li>
@@ -118,7 +123,7 @@ export function Footer() {
                     href="/blog"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-                  {t("footer.blog")}
+                    {t("footer.blog")}
                   </Link>
                 </li>
                 <li>
@@ -126,7 +131,7 @@ export function Footer() {
                     href="/tutorials"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-                       {t("footer.tutorials")}
+                    {t("footer.tutorials")}
                   </Link>
                 </li>
                 <li>
@@ -134,21 +139,24 @@ export function Footer() {
                     href="/faqs"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-                 {t("footer.faqs")}
+                    {t("footer.faqs")}
                   </Link>
                 </li>
               </ul>
             </div>
 
             <div className="lg:col-span-1">
-              <h3 className="font-medium text-lg mb-4">              {t("footer.support")}</h3>
+              <h3 className="font-medium text-lg mb-4">
+                {" "}
+                {t("footer.support")}
+              </h3>
               <ul className="space-y-3">
                 <li>
                   <Link
                     href="/contact"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-                     {t("footer.contactus")}
+                    {t("footer.contactus")}
                   </Link>
                 </li>
                 <li>
@@ -156,7 +164,7 @@ export function Footer() {
                     href="/developers"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-            {t("footer.developers")}
+                    {t("footer.developers")}
                   </Link>
                 </li>
                 <li>
@@ -164,7 +172,7 @@ export function Footer() {
                     href="/documentation"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-             {t("footer.documentation")}
+                    {t("footer.documentation")}
                   </Link>
                 </li>
                 <li>
@@ -172,21 +180,24 @@ export function Footer() {
                     href="/integrations"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-         {t("footer.integrations")}
+                    {t("footer.integrations")}
                   </Link>
                 </li>
               </ul>
             </div>
 
             <div className="lg:col-span-1">
-              <h3 className="font-medium text-lg mb-4">      {t("footer.company")}</h3>
+              <h3 className="font-medium text-lg mb-4">
+                {" "}
+                {t("footer.company")}
+              </h3>
               <ul className="space-y-3">
                 <li>
                   <Link
                     href="/about"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-     {t("footer.about")}
+                    {t("footer.about")}
                   </Link>
                 </li>
                 <li>
@@ -194,7 +205,7 @@ export function Footer() {
                     href="/press"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-          {t("footer.press")}
+                    {t("footer.press")}
                   </Link>
                 </li>
                 <li>
@@ -202,7 +213,7 @@ export function Footer() {
                     href="/events"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors"
                   >
-         {t("footer.events")}
+                    {t("footer.events")}
                   </Link>
                 </li>
                 <li>
@@ -210,7 +221,7 @@ export function Footer() {
                     href="/request-demo"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors flex items-center"
                   >
-               {t("footer.requestdemo")}
+                    {t("footer.requestdemo")}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </li>
@@ -231,7 +242,7 @@ export function Footer() {
                 href="/terms"
                 className="text-gray-400 hover:text-white  text-header-base-hover text-sm transition-colors"
               >
-  {t("footer.terms")}
+                {t("footer.terms")}
               </Link>
               <Link
                 href="/privacy"
@@ -243,7 +254,7 @@ export function Footer() {
                 href="/contact"
                 className="text-gray-400 hover:text-white  text-header-base-hover text-sm transition-colors"
               >
-              {t("footer.contact")}
+                {t("footer.contact")}
               </Link>
               <LanguageCurrencySwitcher />
             </div>
