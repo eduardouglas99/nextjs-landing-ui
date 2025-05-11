@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { ArrowRight, Globe, Euro, Info } from "lucide-react";
 import Image from "next/image";
-import { Container } from "../components/Container";
+import { Container } from "../Container";
+
 
 export function Footer() {
   return (
