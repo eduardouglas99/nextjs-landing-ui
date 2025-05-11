@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import SectionTitle from "../SectionTitle";
 import ButtonSignUp from "../ButtonSignUp";
 
@@ -106,14 +105,14 @@ export function WorldOfLearning({
   };
 
   return (
-    <section className="relative w-full bg-[#FACC15] py-30 md:py-40 overflow-hidden">
+    <section className="relative w-full bg-[#FACC15] py-30 md:py-30 overflow-hidden">
       <div className="container mx-auto px-4 relative">
-        <div className="max-w-[40%] w-full mx-auto text-center relative z-10">
+        <div className="w-full mx-auto text-center relative z-10">
           <SectionTitle
             words={["Join", "a", "world", "of", "learning"]}
             className="justify-center"
           />
-          <p className="my-8 text-testimonial text-center">
+          <p className="max-w-[600px] my-8 m-auto text-testimonial text-center">
             Malesuada ut aliquam at ac est nisi, interdum etiam dignissim. Risus
             elit et fringilla habitant ut facilisi.
           </p>
@@ -134,7 +133,7 @@ export function WorldOfLearning({
           return (
             <div
               key={index}
-              className={`absolute ${position} w-${width} h-${height} rounded-full overflow-hidden border-2 border-yellow-300`}
+              className={`absolute ${position} w-${width} h-${height} rounded-full overflow-hidden border-2 border-yellow-300 opacity-[0.1] lg:opacity-100`}
               style={{
                 width: `${width * 0.25}rem`,
                 height: `${height * 0.25}rem`,
@@ -161,7 +160,7 @@ export function WorldOfLearning({
           );
         })}
 
-        <div className="absolute left-[15%] top-[0%]">
+        <div className="absolute left-[15%] top-[0%] opacity-[0.1] lg:opacity-100">
           <svg
             width="24"
             height="24"
@@ -192,7 +191,7 @@ export function WorldOfLearning({
             />
           </svg>
         </div>
-        <div className="absolute left-[4%] top-[56%]">
+        <div className="absolute left-[4%] top-[56%] opacity-[0.1] lg:opacity-100">
           <svg
             width="24"
             height="24"
@@ -215,7 +214,7 @@ export function WorldOfLearning({
             />
           </svg>
         </div>
-        <div className="absolute left-[17%] top-[70%]">
+        <div className="absolute left-[17%] top-[70%] opacity-[0.1] lg:opacity-100">
           <svg
             width="24"
             height="24"
@@ -247,7 +246,7 @@ export function WorldOfLearning({
             />
           </svg>
         </div>
-        <div className="absolute right-[15%] top-[30%]">
+        <div className="absolute right-[15%] top-[30%] opacity-[0.1] lg:opacity-100">
           <svg
             width="24"
             height="24"
@@ -274,7 +273,7 @@ export function WorldOfLearning({
             />
           </svg>
         </div>
-        <div className="absolute right-[20%] top-[60%]">
+        <div className="absolute right-[20%] top-[60%] opacity-[0.1] lg:opacity-100">
           <svg
             width="24"
             height="24"
@@ -291,7 +290,7 @@ export function WorldOfLearning({
             />
           </svg>
         </div>
-        <div className="absolute right-[12%] top-[90%]">
+        <div className="absolute right-[12%] top-[90%] opacity-[0.1] lg:opacity-100">
           <svg
             width="24"
             height="24"
