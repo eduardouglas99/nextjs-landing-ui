@@ -1,4 +1,5 @@
 import AppPromo from "./components/AppPromo";
+import CoolFeatures from "./components/CoolFeatures";
 import CounterStatistic from "./components/CounterStatistic";
 import DemoRequestForm from "./components/DemoRequestForm";
 import HeroBanner from "./components/HeroBanner";
@@ -16,6 +17,7 @@ export default function Home() {
       <CounterStatistic />
       <WhatEveryoneSays />
       <DemoRequestForm />
+      <CoolFeatures />
     </>
   );
 }
