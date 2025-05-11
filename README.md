@@ -93,4 +93,8 @@ We use Git for version control. For available versions, see the tags in this rep
 
 ## 📄 License
 
+<<<<<<< HEAD
 This project is licensed under the (your license) - see the [LICENSE.md](https://github.com/usuario/projeto/licenca) file for details.
+=======
+This project is licensed under the (your license) - see the [LICENSE.md](https://github.com/usuario/projeto/licenca) file for details.
+>>>>>>> d29ad24ec892c5366b4626770040fffb17ff29a6
