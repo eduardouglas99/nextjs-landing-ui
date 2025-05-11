@@ -105,6 +105,7 @@ export default function HeroBanner() {
                 title="Teach students worlwide"
                 width={625}
                 height={545}
+                priority={true}
               />
             </div>
           </div>
