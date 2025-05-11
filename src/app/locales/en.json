@@ -6,38 +6,27 @@
     "resources": "Resources",
     "webinars": "Webinars",
     "guides": "Guides",
-    "signup_now": "Sign Up Now"
+    "signupnow": "Sign Up Now"
   },
   "hero": {
-    "title_line1": "Teach",
-    "title_underline": "underline",
-    "subtitle_line1": "students",
-    "subtitle_line2": "worldwide",
+    "title": "Teach students worldwide",
     "description": "Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis ultricies.",
     "signup_button": "Sign Up Now",
-    "play_demo": "Play demo"
+    "play_demo": "View Demo"
   },
   "trusted_by": {
     "title": "Trusted by",
     "subtitle": "leading companies"
   },
   "app_promo": {
-    "title_start": "An",
-    "title_underline": "all-in-one",
-    "title_end": "app that makes it easier",
+    "title": "An all-in-one app that makes it easier",
     "description_1": "Est et in pharetra magna adipiscing ornare aliquam.",
     "description_2": "Tellus arcu sed consequat ac velit ut eu blandit.",
     "description_3": "Ullamcorper ornare in et egestas dolor orci.",
-    "cta": "Find more about the app"
-  },
-  "carousel": {
-    "text": "Vestibulum sed metus eu orci pulvinar vehicula. Nullam feugiat nulla ut ligula tempor aliquam. Vivamus non molestie eros, vel gravida sapien."
+    "takelesson": "Take Lesson"
   },
   "meet": {
-    "title_1": "Meet",
-    "title_2": "international",
-    "title_3": "students & teachers",
-    "description": "Morbi sit egestas dignissim pharetra, sed amet. Tempus justo senectus risus ac vel, velit, nunc. Eget commodo eget in aliquam facilisi facilisi nec magna hendrerit. Placerat ipsum sit tellus urna, faucibus aenean lorem faucibus integer.",
+    "title": "Meet international students & teachers",
     "cta": "Explore teachers and students"
   },
   "counter": {
@@ -55,8 +44,7 @@
     }
   },
   "testimonials": {
-    "title": "What everyone says:",
-    "description": "Sagittis nunc egestas leo et malesuada urna risus. Morbi proin et cras aliquam. Diam tellus, amet, hac imperdiet. Tellus mi volutpat tellus, congue malesuada sit nisl donec a."
+    "title": "What everyone says:"
   },
   "form": {
     "title": "Ready for your next project?",
@@ -65,7 +53,39 @@
     "email_placeholder": "Enter your email",
     "message_label": "Message",
     "message_placeholder": "What are you say?",
-    "button": "Request demo"
+    "button": "Request demo",
+    "emailerro": "Invalid email",
+    "messageerro": "Message is required",
+    "placeemail": "Enter your email",
+    "placemessage": "What are you say?",
+    "request": "Request Received!",
+    "requessub": "Thank you for your interest! We'll contact you at your address email",
+    "btn": "Close"
+  },
+  "coolfeature": {
+    "title": "All the cool features",
+    "cta": "View all the features",
+    "takelesson": "Take Lesson"
+  },
+  "joinlearning": {
+    "title": "Join a world of learning"
+  },
+  "modal": {
+    "title": "Sign Up for Early Access",
+    "subtitle": "Join our community and be the first to experience our new platform.",
+    "fullname": "Full name",
+    "email": "Email",
+    "phone": "Phone (optional)",
+    "send": "Send request",
+    "registration": "Registration Successful!",
+    "sub": "Thank you for signing up! We've sent a confirmation email to your address email.",
+    "close": "Close",
+   "emailerro": "Invalid email",
+    "nameerror": "Name must be at least 2 characters",
+    "telefoneerro": "Phone number is required",
+    "placenome": "Enter your full name",
+    "placeemail": "Enter your email",
+    "placetelefone": "Enter you phone number"
   },
   "footer": {
     "teach": "Teach",

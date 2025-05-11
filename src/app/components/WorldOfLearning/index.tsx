@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import SectionTitle from "../SectionTitle";
 import ButtonSignUp from "../ButtonSignUp";
+import { useLocalization } from "../localization-provider";
 
 interface StudentImage {
   src: string;
@@ -89,6 +92,8 @@ export function WorldOfLearning({
     },
   ];
 
+   const { t } = useLocalization();
+
   const images = studentImages || defaultImages;
 
   const getImageSize = (size: "sm" | "md" | "lg") => {
@@ -109,7 +114,7 @@ export function WorldOfLearning({
       <div className="container mx-auto px-4 relative">
         <div className="w-full mx-auto text-center relative z-10">
           <SectionTitle
-            words={["Join", "a", "world", "of", "learning"]}
+            words={[t("joinlearning.title")]}
             className="justify-center"
           />
           <p className="max-w-[600px] my-8 m-auto text-testimonial text-center">

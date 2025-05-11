@@ -10,10 +10,30 @@ import ButtonSignUp from "../ButtonSignUp";
 
 export default function Header() {
   const menuItens = [
-    { url: "/", title: "Products", dropdown: false },
-    { url: "/", title: "Solutions", dropdown: false },
-    { url: "/", title: "Pricing", dropdown: false },
-    { url: "/", title: "Resources", dropdown: true },
+    {
+      url: "/",
+      title: "Products",
+      dropdown: false,
+      translatename: "links.products",
+    },
+    {
+      url: "/",
+      title: "Solutions",
+      dropdown: false,
+      translatename: "links.solutions",
+    },
+    {
+      url: "/",
+      title: "Pricing",
+      dropdown: false,
+      translatename: "links.pricing",
+    },
+    {
+      url: "/",
+      title: "Resources",
+      dropdown: true,
+      translatename: "links.resources",
+    },
   ];
 
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -31,14 +51,17 @@ export default function Header() {
           />
           <nav className="hidden md:flex items-center gap-12">
             {menuItens &&
-              menuItens.map(({ url, title, dropdown }, index) => (
-                <MenuItem
-                  key={index}
-                  url={url}
-                  title={title}
-                  hasDropdown={dropdown}
-                />
-              ))}
+              menuItens.map(
+                ({ url, title, dropdown, translatename }, index) => (
+                  <MenuItem
+                    key={index}
+                    url={url}
+                    title={title}
+                    hasDropdown={dropdown}
+                    translatename={translatename}
+                  />
+                )
+              )}
           </nav>
         </div>
         <div className="flex gap-4">
@@ -48,7 +71,7 @@ export default function Header() {
           >
             Log In{" "}
           </button>
-          <ButtonSignUp 
+          <ButtonSignUp
             ariaLabel="Sign Up Now"
             title="Sign Up Now"
             className="hidden md:block cursor-pointer text-header-base btn-header-base-hover py-2 px-7 border-2 rounded-lg border-[#0F172A]"
@@ -88,17 +111,20 @@ export default function Header() {
           <div className="border-t border-gray-200 mx-4" />
           <div className="my-6">
             <nav className="flex flex-col gap-6 px-6 pt-6">
-              {menuItens.map(({ url, title, dropdown }, index) => (
-                <MenuItem
-                  key={index}
-                  url={url}
-                  title={title}
-                  hasDropdown={dropdown}
-                />
-              ))}
+              {menuItens.map(
+                ({ url, title, dropdown, translatename }, index) => (
+                  <MenuItem
+                    key={index}
+                    url={url}
+                    title={title}
+                    hasDropdown={dropdown}
+                    translatename={translatename}
+                  />
+                )
+              )}
             </nav>
             <div className="fixed bottom-8 max-w-full w-full flex flex-col gap-4 px-6 pt-6">
-                <div className="border-t border-gray-200 mx-4" />
+              <div className="border-t border-gray-200 mx-4" />
               <button
                 type="button"
                 className="cursor-pointer text-left text-header-base text-header-base-hover"

@@ -1,11 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Check, ArrowRight } from "lucide-react";
 import { Container } from "../Container";
 import SectionTitle from "../SectionTitle";
 import CardPromo from "../CardPromo";
+import { useLocalization } from "../localization-provider";
 
 export default function AppPromo() {
+  const { t } = useLocalization();
   const cardPromoInfos = [
     {
       label: "Featured",
@@ -26,7 +30,7 @@ export default function AppPromo() {
       color: "#166534",
       title: "International & commercial law",
       description:
-        "Molestie integer eu arcu, mauris bibendum rhoncus imperdiet dui.",
+        "Molestie integer eu arcu, mauris bibendum rhoncus imperdiet dui."
     },
   ];
   return (
@@ -36,16 +40,8 @@ export default function AppPromo() {
           <div className="flex flex-col lg:flex-row items-center relative z-10 lg:gap-x-12">
             <div className="space-y-8 flex-1 lg:max-w-[50%] lg:pr-16">
               <SectionTitle
-                words={[
-                  "An",
-                  "all-in-one",
-                  "app",
-                  "that",
-                  "makes",
-                  "it",
-                  "easier",
-                ]}
-                underlineIndex={1}
+                words={t("app_promo.title").split(" ")}
+                 underlineIndex={1}
                 className="md:font-extrabold leading-[110.00000000000001%] w-[93%] max-w-full p-0 m-0"
               />
 
@@ -86,7 +82,7 @@ export default function AppPromo() {
                 href="/"
                 className="inline-flex items-center text-lg text-blue-600 font-medium hover:text-blue-700 transition-colors text-header-base-hover"
               >
-                Find more about the app
+              {t("app_promo.cta")}
                 <ArrowRight className="ml-1 h-4 w-4" />
               </Link>
             </div>
@@ -125,8 +121,8 @@ export default function AppPromo() {
                       <CardPromo
                         key={id}
                         title={title}
-                        ariaLabel="Take Lesson"
-                        buttonName="Take Lesson"
+                        ariaLabel= {t("app_promo.takelesson")}
+                        buttonName={t("app_promo.takelesson")}
                         description={description}
                         color={color}
                         label={label}

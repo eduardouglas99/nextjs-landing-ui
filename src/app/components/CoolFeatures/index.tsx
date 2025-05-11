@@ -1,9 +1,11 @@
-import Image from "next/image";
+"use client";
+
 import Link from "next/link";
-import { Check, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Container } from "../Container";
 import SectionTitle from "../SectionTitle";
 import CardPromo from "../CardPromo";
+import { useLocalization } from "../localization-provider";
 
 export default function CoolFeatures() {
   const cardPromoInfos = [
@@ -15,6 +17,7 @@ export default function CoolFeatures() {
         "Aliquam ut euismod consectetur elementum ultricies volutpat sit non.",
     },
   ];
+  const { t } = useLocalization();
   return (
     <Container className="py-12 pb-0 md:px-10 md:py-20">
       <section className="w-full bg-white overflow-hidden">
@@ -22,7 +25,7 @@ export default function CoolFeatures() {
           <div className="flex flex-col lg:flex-row items-center relative z-10 lg:gap-x-12">
             <div className="space-y-8 flex-1 lg:max-w-[50%] lg:pr-16">
               <SectionTitle
-                words={["All", "the", "cool", "features"]}
+                words={t("coolfeature.title").split(/[\s-]+/)}
                 underlineIndex={3}
                 className="md:font-extrabold leading-[110.00000000000001%] w-[93%] max-w-full p-0 m-0"
               />
@@ -38,7 +41,7 @@ export default function CoolFeatures() {
                 href="/"
                 className="inline-flex items-center text-lg text-blue-600 font-medium hover:text-blue-700 transition-colors text-header-base-hover"
               >
-                View all the features
+                {t("coolfeature.cta")}
                 <ArrowRight className="ml-1 h-4 w-4" />
               </Link>
             </div>
@@ -69,8 +72,8 @@ export default function CoolFeatures() {
                           <CardPromo
                             key={id}
                             title={title}
-                            ariaLabel="Take Lesson"
-                            buttonName="Take Lesson"
+                            ariaLabel={t("app_promo.takelesson")}
+                            buttonName={t("app_promo.takelesson")}
                             description={description}
                             color={color}
                             label={label}

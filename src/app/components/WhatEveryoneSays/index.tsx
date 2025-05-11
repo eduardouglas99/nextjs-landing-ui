@@ -11,6 +11,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Container } from "../Container";
 import SectionTitle from "../SectionTitle";
+import { useLocalization } from "../localization-provider";
 
 const testimonials = [
   {
@@ -49,13 +50,14 @@ const testimonials = [
 
 export default function WhatEveryoneSays() {
   const swiperRef = useRef<SwiperType | null>(null);
+  const { t } = useLocalization();
 
   return (
     <section className="py-16">
       <Container>
         <div className="mb-10 flex justify-between items-center">
           <SectionTitle
-            words={["What", "everyone", "says"]}
+            words={[t("testimonials.title")]}
             className="primary-color md:font-extrabold p-0 m-0"
           />
 

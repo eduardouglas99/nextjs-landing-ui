@@ -1,10 +1,14 @@
+"use client";
+
 import { Container } from "../Container";
 import Image from "next/image";
 import Link from "next/link";
 import ButtonSignUp from "../ButtonSignUp";
 import SectionTitle from "../SectionTitle";
+import { useLocalization } from "../localization-provider";
 
 export default function HeroBanner() {
+  const { t } = useLocalization();
   return (
     <Container className="flex items-center py-12 pb-0 md:px-10 md:pt-20">
       <section className="w-full bg-white">
@@ -13,7 +17,7 @@ export default function HeroBanner() {
             <div className="space-y-6">
               <div className="m-0">
                 <SectionTitle
-                  words={["Teach ", " students", "worldwide"]}
+                  words={t("hero.title").split(/[\s-]+/)}
                   underlineIndex={0}
                   className="text-[40px] md:text-[72px] leading-[110.00000000000001%]"
                 />
@@ -41,13 +45,14 @@ export default function HeroBanner() {
                     height={20}
                     className="object-cover blue"
                   />
-                  View Demo
+                  {t("hero.play_demo")}
                 </Link>
               </div>
 
               <div className="flex md:items-center gap-4 md:gap-12 mt-8 md:mt-20 flex-col md:flex-row justify-baseline mb-12">
                 <p className="text-base text-[#475569]">
-                  Trusted by <span className="md:block">leading companies</span>
+                  {t("trusted_by.title")}
+                  <span className="md:block">{t("trusted_by.subtitle")}</span>
                 </p>
                 <div className="flex gap-6 items-center">
                   <Image

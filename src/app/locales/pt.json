@@ -6,13 +6,10 @@
     "resources": "Recursos",
     "webinars": "Webinars",
     "guides": "Guias",
-    "signup_now": "Inscreva-se agora"
+    "signupnow": "Inscreva-se agora"
   },
   "hero": {
-    "title_line1": "Ensine",
-    "title_underline": "sublinhado",
-    "subtitle_line1": "alunos",
-    "subtitle_line2": "no mundo todo",
+    "title": "Ensine alunos no mundo todo",
     "description": "Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis ultricies.",
     "signup_button": "Inscreva-se agora",
     "play_demo": "Ver demonstração"
@@ -22,41 +19,33 @@
     "subtitle": "principais empresas"
   },
   "app_promo": {
-    "title_start": "Um",
-    "title_underline": "aplicativo tudo-em-um",
-    "title_end": "que facilita tudo",
+    "title": "Um all-in-one aplicativo que faz isto mais fácil",
     "description_1": "Est et in pharetra magna adipiscing ornare aliquam.",
     "description_2": "Tellus arcu sed consequat ac velit ut eu blandit.",
     "description_3": "Ullamcorper ornare in et egestas dolor orci.",
-    "cta": "Saiba mais sobre o aplicativo"
-  },
-  "carousel": {
-    "text": "Vestibulum sed metus eu orci pulvinar vehicula. Nullam feugiat nulla ut ligula tempor aliquam. Vivamus non molestie eros, vel gravida sapien."
+    "cta": "Saiba mais sobre o aplicativo",
+    "takelesson": "Faça uma lição"
   },
   "meet": {
-    "title_1": "Conheça",
-    "title_2": "estudantes",
-    "title_3": "e professores internacionais",
-    "description": "Morbi sit egestas dignissim pharetra, sed amet. Tempus justo senectus risus ac vel, velit, nunc. Eget commodo eget in aliquam facilisi facilisi nec magna hendrerit. Placerat ipsum sit tellus urna, faucibus aenean lorem faucibus integer.",
+    "title": "Conheça estudantes e professores internacionais",
     "cta": "Explorar professores e estudantes"
   },
   "counter": {
     "heart": {
-      "label": "países com usuários",
+      "label": "Países com usuários",
       "value": "195"
     },
     "diamond": {
-      "label": "professores valorizados",
+      "label": "Professores valorizados",
       "value": "1M"
     },
     "school": {
-      "label": "alunos felizes",
+      "label": "Alunos felizes",
       "value": "17M"
     }
   },
   "testimonials": {
-    "title": "O que todos dizem:",
-    "description": "Sagittis nunc egestas leo et malesuada urna risus. Morbi proin et cras aliquam. Diam tellus, amet, hac imperdiet. Tellus mi volutpat tellus, congue malesuada sit nisl donec a."
+    "title": "O que todos dizem:"
   },
   "form": {
     "title": "Pronto para seu próximo projeto?",
@@ -65,10 +54,44 @@
     "email_placeholder": "Digite seu email",
     "message_label": "Mensagem",
     "message_placeholder": "O que você quer dizer?",
-    "button": "Solicitar demonstração"
+    "button": "Solicitar demonstração",
+    "emailerro": "Email inválido",
+    "messageerro": "Mensagem inválida",
+    "placeemail": "Entre com seu email",
+    "placemessage": "O que você disse?",
+    "request": "Solicitação recebida!",
+    "requessub": "Agradecemos o seu interesse! Entraremos em contato em breve pelo seu email",
+    "btn": "Fechar"
   },
 
-"footer": {
+  "coolfeature": {
+    "title": "Todos os recursos interessantes",
+    "cta": "Veja todos os recursos",
+    "takelesson": "Take Lesson"
+  },
+
+  "joinlearning": {
+    "title": "Junte-se a um mundo de aprendizagem"
+  },
+   "modal": {
+    "title": "Inscreva-se para acesso antecipado",
+    "subtitle": "Junte-se à nossa comunidade e seja o primeiro a experimentar nossa nova plataforma.",
+    "fullname": "Nome completo",
+    "email": "Email",
+    "phone": "Telefone (opcional)",
+    "send": "Enviar requisição",
+    "registration": "Cadastro realizado com sucesso!",
+    "sub": "Obrigado por se inscrever! Enviamos um e-mail de confirmação para o seu endereço de email.",
+    "close": "Fechar",
+    "emailerro": "Email inválido",
+    "nameerror": "O nome deve ter pelo menos 2 caracteres",
+    "telefoneerro": "Telefone inválido",
+    "placenome": "Entre com seu nome completo",
+    "placeemail": "Entre com seu email",
+    "placetelefone": "Entre com seu telefone"
+  },
+
+  "footer": {
     "teach": "Ensinar",
     "product": "Produto",
     "pricing": "Preços",

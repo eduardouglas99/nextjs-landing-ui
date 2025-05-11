@@ -15,7 +15,7 @@ export function getTranslation(language: Language, path: string) {
 
   for (const key of keys) {
     if (current[key] === undefined) {
-      console.warn(`Translation missing: ${path} for language ${language}`)
+      // console.warn(`Translation missing: ${path} for language ${language}`)
       return path
     }
     current = current[key]

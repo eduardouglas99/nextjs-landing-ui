@@ -1,9 +1,13 @@
+"use client";
+
 import { Container } from "../Container";
 import SectionTitle from "../SectionTitle";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { useLocalization } from "../localization-provider";
 
 export default function MeetTheCommunity() {
+  const { t } = useLocalization();
   return (
     <Container className="py-12 pb-0 md:px-10 md:py-20">
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between relative z-10 lg:gap-x-12">
@@ -101,7 +105,7 @@ export default function MeetTheCommunity() {
         </div>
         <div className="space-y-8 flex-1 lg:max-w-[50%] lg:pr-16 lg:order-2">
           <SectionTitle
-            words={["Meet", "international", "students", "&", "teachers"]}
+            words={[t("meet.title")]}
             className="md:font-extrabold leading-[110.00000000000001%] w-[93%] max-w-full p-0 m-0"
           />
           <p className="primary-color my-6 sm:my-8 text-base sm:font-normal leading-[140%] sm:leading-[180%]">
@@ -114,7 +118,7 @@ export default function MeetTheCommunity() {
             href="/"
             className="inline-flex items-center text-lg text-blue-600 font-medium hover:text-blue-700 transition-colors text-header-base-hover mb-11"
           >
-            Explore teachers and students
+            {t("meet.cta")}
             <ArrowRight className="ml-1 h-4 w-4" />
           </Link>
         </div>

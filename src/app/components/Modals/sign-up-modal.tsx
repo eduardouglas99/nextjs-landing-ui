@@ -4,7 +4,8 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
-import { CircleCheckBig, Delete } from "lucide-react";
+import { CircleCheckBig } from "lucide-react";
+import { useLocalization } from "../localization-provider";
 
 const formSchema = z.object({
   fullname: z
@@ -27,6 +28,7 @@ interface SignUpModalProps {
 
 export default function SignUpModal({ onClose }: SignUpModalProps) {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const { t } = useLocalization();
 
   const {
     register,
@@ -45,18 +47,20 @@ export default function SignUpModal({ onClose }: SignUpModalProps) {
   return (
     <div className="fixed inset-0 bg-[#000000c9] bg-opacity-50 z-50 flex items-center justify-center px-4">
       <div className="bg-white text-left rounded-xl max-w-lg w-full p-9 relative">
-        <button className="cursor-pointer absolute top-4 right-4 primary-color text-2xl" onClick={onClose}>
+        <button
+          className="cursor-pointer absolute top-4 right-4 primary-color text-2xl"
+          onClick={onClose}
+        >
           ✕
         </button>
 
         {!isSubmitted ? (
           <>
             <h2 className="text-2xl font-bold mb-4 primary-color text-center">
-              Sign Up for Early Access
+              {t("modal.title")}
             </h2>
             <h3 className="primary-color my-4 text-base font-normal text-center">
-              Join our community and be the first to experience our new
-              platform.
+              {t("modal.subtitle")}
             </h3>
             <form
               onSubmit={handleSubmit(onSubmit)}
@@ -67,16 +71,16 @@ export default function SignUpModal({ onClose }: SignUpModalProps) {
                   htmlFor="fullname"
                   className="block font-medium mb-1 primary-color"
                 >
-                  Full name
+                  {t("modal.fullname")}
                 </label>
                 <input
                   {...register("fullname")}
                   className="w-full border border-gray-300 rounded-lg p-2 primary-color focus:outline-0"
-                  placeholder="Enter your full name"
+                  placeholder={t("modal.fullname")}
                 />
                 {errors.fullname && (
                   <span className="text-red-500 text-sm">
-                    {errors.fullname.message}
+                    {t("modal.nameerror")}
                   </span>
                 )}
               </div>
@@ -85,16 +89,16 @@ export default function SignUpModal({ onClose }: SignUpModalProps) {
                   htmlFor="email"
                   className="block font-medium mb-1 primary-color"
                 >
-                  Email
+                  {t("modal.email")}
                 </label>
                 <input
                   {...register("email")}
                   className="w-full border border-gray-300 rounded-lg p-2 primary-color focus:outline-0"
-                  placeholder="Enter your email"
+                  placeholder={t("modal.placeemail")}
                 />
                 {errors.email && (
                   <span className="text-red-500 text-sm">
-                    {errors.email.message}
+                    {t("modal.emailerro")}
                   </span>
                 )}
               </div>
@@ -103,16 +107,16 @@ export default function SignUpModal({ onClose }: SignUpModalProps) {
                   htmlFor="email"
                   className="block font-medium mb-1 primary-color"
                 >
-                  Phone (opcional)
+                  {t("modal.phone")}
                 </label>
                 <input
                   {...register("phone")}
                   className="w-full border border-gray-300 rounded-lg p-2 focus:outline-0"
-                  placeholder="Enter your phone"
+                  placeholder={t("modal.placetelefone")}
                 />
                 {errors.phone && (
                   <span className="text-red-500 text-sm">
-                    {errors.phone.message}
+                    {t("modal.telefoneerro")}
                   </span>
                 )}
               </div>
@@ -121,7 +125,7 @@ export default function SignUpModal({ onClose }: SignUpModalProps) {
                 className="cursor-pointer py-3.5 m-5  bg-oragen-color text-white font-semibold rounded-lg hover:opacity-90 transition"
                 aria-label="Send request"
               >
-                Send Request
+                {t("modal.send")}
               </button>
             </form>
           </>
@@ -129,18 +133,17 @@ export default function SignUpModal({ onClose }: SignUpModalProps) {
           <div className="text-center flex flex-col items-center">
             <CircleCheckBig size={50} color="green" className="mb-5" />
             <h2 className="text-2xl font-bold mb-4 mx-auto primary-color text-center">
-              Registration Successful!
+              {t("modal.registration")}
             </h2>
             <h3 className="primary-color my-2 text-base font-normal text-center">
-              Thank you for signing up! We've sent a confirmation email to your
-              address.
+              {t("modal.sub")}
             </h3>
             <button
               onClick={onClose}
               className="cursor-pointer py-3.5 mt-5 max-w-[200px] w-full bg-oragen-color text-white font-semibold rounded-lg hover:opacity-90 transition"
               aria-label="Close"
             >
-              Close
+              {t("modal.close")}
             </button>
           </div>
         )}
