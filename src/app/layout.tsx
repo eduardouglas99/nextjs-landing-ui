@@ -12,6 +12,9 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Teach",
   description: "Teach students worldwide",
+   icons: {
+    icon: "/images/favicon/favicon.ico"
+   }
 };
 
 export default function RootLayout({
