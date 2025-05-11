@@ -48,12 +48,11 @@ export default function Header() {
           >
             Log In{" "}
           </button>
-          <button
-            type="button"
+          <ButtonSignUp 
+            ariaLabel="Sign Up Now"
+            title="Sign Up Now"
             className="hidden md:block cursor-pointer text-header-base btn-header-base-hover py-2 px-7 border-2 rounded-lg border-[#0F172A]"
-          >
-            Sign Up Now
-          </button>
+          />
           {!isNavOpen && (
             <button
               className="md:hidden text-2xl"
