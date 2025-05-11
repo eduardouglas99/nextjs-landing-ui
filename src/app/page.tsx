@@ -6,6 +6,7 @@ import HeroBanner from "./components/HeroBanner";
 import MeetTheCommunity from "./components/MeetTheCommunity";
 import Testimonial from "./components/Testimonial";
 import WhatEveryoneSays from "./components/WhatEveryoneSays";
+import { WorldOfLearning } from "./components/WorldOfLearning";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <WhatEveryoneSays />
       <DemoRequestForm />
       <CoolFeatures />
+      <WorldOfLearning />
     </>
   );
 }
