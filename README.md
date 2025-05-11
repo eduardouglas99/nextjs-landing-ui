@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Teach
 
-## Getting Started
+Teach is an all-in-one platform designed to make the learning experience easier and more accessible for students and teachers worldwide. It connects international students and teachers, creating a global community for education. The platform provides a space to meet new students and teachers, collaborate on educational content, and share knowledge in a seamless way.
 
-First, run the development server:
+## 📚 Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* [Getting Started](#-getting-started)
+* [Prerequisites](#-prerequisites)
+* [Installation and Configuration](#-installation-and-configuration)
+* [Running the Project](#-running-the-project)
+* [Project Access](#-project-access)
+* [Running Tests](#-running-tests)
+* [Built With](#-built-with)
+* [Author](#-author)
+* [License](#-license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Check **[Installation and Configuration](#-installation-and-configuration)** to know how to deploy the project.
 
-## Learn More
+## 📋 Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+- Node.js
+- npm (package manager)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔧 Installation and Configuration
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/eduardouglas99/nextjs-landing-ui.git
 
-## Deploy on Vercel
+2. Navigate to the project directory:
+   ```bash
+   cd buzzvel-frontend-test-2025
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Install dependencies:
+   ```bash
+   npm install
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ⚙️ Running the Project
+
+1. Start the Project in Development Environment:
+   After starting the JSON Server, you can start the project in a local development environment. Use the following command:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+
+2. Build the Project for Production:
+   Before deploying the project in a production environment, you need to build it. Use the following command to create an optimized version for production:
+   ```bash
+   npm run build
+   # or
+   yarn build
+
+3. Start the Project in Production Environment:
+   After building the project, you can start the local production server. Use the following command:
+   ```bash
+   npm start
+   # or
+   yarn start
+
+## 🌐 Project Access
+
+After successfully executing the above steps, the project will be accessible locally at http://localhost:3000. You can open this URL in a web browser to view the project in action.
+
+## ⚙️ Running Tests
+
+npm test
+
+## 🛠️ Built With
+
+Mention the tools you used to create your project
+
+- [React](https://reactjs.org/) - JavaScript library for building user interfaces
+- [Next.js](https://nextjs.org/) - React framework for production
+- [Tailwindcss](https://tailwindcss.com/) - CSS styling in React components
+- [Lucide](https://lucide.dev/icons) - Icons for React
+- [React Hook Form](https://react-hook-form.com/) - React library for forms
+- [Zod](https://github.com/colinhacks/zod) - Data schema validation in TypeScript
+- [Swiper](https://swiperjs.com/) - Carrossel animation
+- [Tailwind merge](https://www.npmjs.com/package/tailwind-merge) - Merge styles classes in tailwind
+
+## 📌 Version
+
+We use Git for version control. For available versions, see the tags in this repository [tags in this repository](https://github.com/eduardouglas99/nextjs-landing-ui.git). 
+
+## ✒️ Author
+
+* **Eduardo Caetano** - *Front-end Developer* - [eduardouglas99](https://github.com/eduardouglas99)
+
+## 📄 License
+
+This project is licensed under the (your license) - see the [LICENSE.md](https://github.com/usuario/projeto/licenca) file for details.
