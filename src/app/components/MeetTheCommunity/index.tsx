@@ -114,7 +114,7 @@ export default function MeetTheCommunity() {
             href="/"
             className="inline-flex items-center text-lg text-blue-600 font-medium hover:text-blue-700 transition-colors text-header-base-hover mb-11"
           >
-            Find more about the app
+            Explore teachers and students
             <ArrowRight className="ml-1 h-4 w-4" />
           </Link>
         </div>

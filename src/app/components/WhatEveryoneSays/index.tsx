@@ -4,7 +4,7 @@ import { useRef } from "react";
 import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
 
 import "swiper/css";
@@ -54,7 +54,10 @@ export default function WhatEveryoneSays() {
     <section className="py-16">
       <Container>
         <div className="mb-10 flex justify-between items-center">
-          <SectionTitle words={["What", "everyone", "says"]} className="primary-color md:font-extrabold p-0 m-0"/>
+          <SectionTitle
+            words={["What", "everyone", "says"]}
+            className="primary-color md:font-extrabold p-0 m-0"
+          />
 
           <div className="flex gap-2">
             <button
@@ -104,9 +107,14 @@ export default function WhatEveryoneSays() {
 
         <div className="rounded-lg p-4">
           <Swiper
-            modules={[Navigation]}
+            modules={[Navigation, Autoplay]}
             spaceBetween={24}
             slidesPerView={1}
+            autoplay={{
+              delay: 500,
+              disableOnInteraction: false,
+            }}
+            speed={8000}
             loop={true}
             onSwiper={(swiper) => {
               swiperRef.current = swiper;

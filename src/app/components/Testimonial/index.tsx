@@ -56,9 +56,10 @@ export default function Testimonial() {
               "swiper-pagination-bullet-active swiper-custom-bullet-active",
           }}
           autoplay={{
-            delay: 500000,
+            delay: 500,
             disableOnInteraction: false,
           }}
+          speed={8000}
           loop={true}
           className="testimonial-yellow-swiper overflow-visible"
         >
