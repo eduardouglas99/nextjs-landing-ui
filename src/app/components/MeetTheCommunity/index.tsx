@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Container } from "../Container";
 import SectionTitle from "../SectionTitle";
 import { ArrowRight } from "lucide-react";
@@ -11,7 +10,7 @@ export default function MeetTheCommunity() {
         <div className="relative z-0 max-w-[500px] mx-auto mb-10 lg:mb-0 lg:max-w-none w-[340px] sm:w-[500px] lg:relative lg:order-1">
           <div className="grid grid-cols-4 gap-4 items-center">
             <div className="flex flex-col">
-              <Image
+              <img
                 src="/images/meet-the-comunity/img01.svg"
                 className="rounded-xl object-cover w-[128px] h-[192px]"
                 alt="Moldure"
@@ -19,7 +18,7 @@ export default function MeetTheCommunity() {
                 width="128"
                 height="192"
               />
-              <Image
+              <img
                 src="/images/meet-the-comunity/img02.svg"
                 className="rounded-xl object-cover w-[172px] h-[258px]"
                 alt="Moldure"
@@ -29,7 +28,7 @@ export default function MeetTheCommunity() {
               />
             </div>
             <div className="flex flex-col mt-6">
-              <Image
+              <img
                 src="/images/meet-the-comunity/img03.svg"
                 className="rounded-xl object-cover w-[128px] h-[212px]"
                 alt="Moldure"
@@ -37,7 +36,7 @@ export default function MeetTheCommunity() {
                 width="128"
                 height="212"
               />
-              <Image
+              <img
                 src="/images/meet-the-comunity/img04.svg"
                 className="rounded-xl object-cover w-[128px] h-[215px]"
                 alt="Moldure"
@@ -45,7 +44,7 @@ export default function MeetTheCommunity() {
                 width="128"
                 height="215"
               />
-              <Image
+              <img
                 src="/images/meet-the-comunity/img05.svg"
                 className="rounded-xl object-cover w-[128px] h-[160px]"
                 alt="Moldure"
@@ -55,7 +54,7 @@ export default function MeetTheCommunity() {
               />
             </div>
             <div className="flex flex-col">
-              <Image
+              <img
                 src="/images/meet-the-comunity/img06.svg"
                 className="rounded-xl object-cover w-[128px] h-[171px]"
                 alt="Moldure"
@@ -63,7 +62,7 @@ export default function MeetTheCommunity() {
                 width="128"
                 height="171"
               />
-              <Image
+              <img
                 src="/images/meet-the-comunity/img07.svg"
                 className="rounded-xl object-cover w-[128px] h-[165px]"
                 alt="Moldure"
@@ -71,7 +70,7 @@ export default function MeetTheCommunity() {
                 width="128"
                 height="165"
               />
-              <Image
+              <img
                 src="/images/meet-the-comunity/img08.svg"
                 className="rounded-xl object-cover w-[128px] h-[192px]"
                 alt="Moldure"
@@ -81,7 +80,7 @@ export default function MeetTheCommunity() {
               />
             </div>
             <div className="flex flex-col">
-              <Image
+              <img
                 src="/images/meet-the-comunity/img09.svg"
                 className="rounded-xl object-cover w-[160px] h-[255px]"
                 alt="Moldure"
@@ -89,7 +88,7 @@ export default function MeetTheCommunity() {
                 width="160"
                 height="255"
               />
-              <Image
+              <img
                 src="/images/meet-the-comunity/img10.svg"
                 className="rounded-xl object-cover w-[128px] h-[165px]"
                 alt="Moldure"

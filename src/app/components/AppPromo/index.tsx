@@ -92,7 +92,7 @@ export default function AppPromo() {
             </div>
 
             <div className="relative flex-1 flex-shrink-0 mt-12 lg:mt-0 lg:max-w-[50%]">
-              <Image
+              <img
                 src="/images/app-promo/yellow-points.svg"
                 alt="Yellow points"
                 width={139}
@@ -100,7 +100,7 @@ export default function AppPromo() {
                 className="absolute z-20 h-[510px] left-[30%] lg:left-[-32%] top-[-12%] lg:top-0 sm:block"
               />
 
-              <Image
+              <img
                 src="/images/app-promo/blob.svg"
                 alt="Blob"
                 width={506}

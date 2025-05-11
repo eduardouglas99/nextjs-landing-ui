@@ -54,7 +54,7 @@ export default function HeroBanner() {
                     src="/images/hero-banner/black-and-white-collection/ci-cd.svg"
                     alt="CI/CD"
                     title="CI/CD"
-                    width={33.25}
+                    width={32}
                     height={32}
                   />
 
@@ -62,7 +62,7 @@ export default function HeroBanner() {
                     src="/images/hero-banner/black-and-white-collection/containerization.svg"
                     alt="Containerization"
                     title="Containerization"
-                    width={33.25}
+                    width={32}
                     height={32}
                   />
 
@@ -70,7 +70,7 @@ export default function HeroBanner() {
                     src="/images/hero-banner/black-and-white-collection/microservices.svg"
                     alt="Microservices Architecturee"
                     title="Microservices Architecturee"
-                    width={33.25}
+                    width={32}
                     height={32}
                   />
 
@@ -78,7 +78,7 @@ export default function HeroBanner() {
                     src="/images/hero-banner/black-and-white-collection/cloud-infrastructure.svg"
                     alt="Cloud Infrastructure"
                     title="Cloud Infrastructure"
-                    width={33.25}
+                    width={32}
                     height={32}
                   />
 
@@ -86,7 +86,7 @@ export default function HeroBanner() {
                     src="/images/hero-banner/black-and-white-collection/api-gateway.svg"
                     alt="Service Mesh / API Gateway"
                     title="Service Mesh / API Gateway"
-                    width={33.25}
+                    width={32}
                     height={32}
                   />
                 </div>
@@ -98,8 +98,8 @@ export default function HeroBanner() {
                 src="/images/hero-banner/hero-banner.png"
                 alt="Teach students worlwide"
                 title="Teach students worlwide"
-                width={624.6}
-                height={544.53}
+                width={625}
+                height={545}
               />
             </div>
           </div>
