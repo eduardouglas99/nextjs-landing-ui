@@ -33,7 +33,7 @@ export function LanguageCurrencySwitcher() {
     <div className="flex items-center space-x-4">
       <button
         onClick={toggleLanguage}
-        className="text-gray-400 hover:text-white text-sm flex items-center transition-colors"
+        className="cursor-pointer text-gray-400 hover:text-white text-sm flex items-center transition-colors"
         aria-label={languageButtonLabel}
       >
         <Globe className="h-4 w-4 mr-1" />
@@ -42,7 +42,7 @@ export function LanguageCurrencySwitcher() {
 
       <button
         onClick={toggleCurrency}
-        className="text-gray-400 hover:text-white text-sm flex items-center transition-colors"
+        className="cursor-pointer text-gray-400 hover:text-white text-sm flex items-center transition-colors"
         aria-label={currencyButtonLabel}
       >
         <DollarSign className="h-4 w-4 mr-1" />
@@ -50,7 +50,7 @@ export function LanguageCurrencySwitcher() {
       </button>
 
       <button
-        className="text-gray-400 hover:text-white text-sm transition-colors"
+        className="cursor-pointer text-gray-400 hover:text-white text-sm transition-colors"
         aria-label={t("buttons.information")}
       >
         <Info className="h-4 w-4" />
