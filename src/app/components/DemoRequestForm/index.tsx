@@ -45,7 +45,7 @@ export default function DemoRequestForm() {
   };
 
   return (
-    <div className="bg-oragen-color relative">
+    <div id="pricing" className="bg-oragen-color relative">
       {isSuccessModalOpen && (
         <div className="fixed inset-0 bg-[#000000c9] bg-opacity-60 flex items-center justify-center z-50">
           <div className="bg-white p-8 rounded-lg shadow-xl max-w-md w-full text-center flex flex-col items-center">

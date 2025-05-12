@@ -36,13 +36,33 @@ export function MenuItem({
 
   const { t } = useLocalization();
 
+  const handleClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const targetElement = document.querySelector(url);
+
+    if (targetElement) {
+      const offset = 80;
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <div className={`relative group`}>
       <div
         onClick={toggleDropdown}
         className="flex items-center gap-2 cursor-pointer select-none"
       >
-        <Link href={url} className="text-header-base text-header-base-hover">
+        <Link
+          href={url}
+          className="text-header-base text-header-base-hover"
+          onClick={handleClick}
+        >
           {t(`${translatename}`)}
         </Link>
         {hasDropdown && (
@@ -63,20 +83,22 @@ export function MenuItem({
         >
           <ul className="py-2">
             <Link
-              href="/resources/blog"
+              href="#"
               className="block px-4 py-2 hover:bg-gray-100"
             >
               Blog
             </Link>
             <Link
-              href="/resources/webinars"
+              href="#"
               className="block px-4 py-2 hover:bg-gray-100"
+              onClick={handleClick}
             >
               {t(`links.webinars`)}
             </Link>
             <Link
-              href="/resources/guides"
+              href="#"
               className="block px-4 py-2 hover:bg-gray-100"
+              onClick={handleClick}
             >
               {t(`links.guides`)}
             </Link>

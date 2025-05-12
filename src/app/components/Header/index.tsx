@@ -4,37 +4,54 @@ import { Container } from "../Container";
 import Image from "next/image";
 import TeachLogo from "../../../../public/images/header/logo-teach.png";
 import { MenuItem } from "../MenuItem";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import ButtonSignUp from "../ButtonSignUp";
 
 export default function Header() {
   const menuItens = [
     {
-      url: "/",
+      url: "#products",
       title: "Products",
       dropdown: false,
       translatename: "links.products",
     },
     {
-      url: "/",
+      url: "#solutions",
       title: "Solutions",
       dropdown: false,
       translatename: "links.solutions",
     },
     {
-      url: "/",
+      url: "#pricing",
       title: "Pricing",
       dropdown: false,
       translatename: "links.pricing",
     },
     {
-      url: "/",
+      url: "#resources",
       title: "Resources",
       dropdown: true,
       translatename: "links.resources",
     },
   ];
+
+  useEffect(() => {
+    const handleAnchorNavigation = () => {
+      const hash = window.location.hash
+      if (hash) {
+        const element = document.querySelector(hash)
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' })
+        }
+      }
+    }
+
+    window.addEventListener('hashchange', handleAnchorNavigation)
+    return () => {
+      window.removeEventListener('hashchange', handleAnchorNavigation)
+    }
+  }, [])
 
   const [isNavOpen, setIsNavOpen] = useState(false);
 
