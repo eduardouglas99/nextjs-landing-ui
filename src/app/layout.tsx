@@ -13,7 +13,7 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: "Teach",
-  description: "Teach students worldwide",
+  description: "Teach is an all-in-one platform designed to make the learning experience easier and more accessible for students and teachers worldwide. It connects international students and teachers, creating a global community for education. The platform provides a space to meet new students and teachers, collaborate on educational content, and share knowledge in a seamless way.",
   icons: {
     icon: "/images/favicon/favicon.ico",
   },
