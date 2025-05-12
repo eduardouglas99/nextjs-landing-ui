@@ -57,7 +57,7 @@ export function Footer() {
                     href="/accessibility"
                     className="text-gray-300 hover:text-white text-header-base-hover transition-colors flex items-center"
                   >
-                    Accessibility
+                     {t("footer.accessibility")}
                     <span className="ml-2 text-xs bg-white text-purple-600 px-1.5 py-0.5 rounded">
                       {t("footer.beta")}
                     </span>
@@ -108,7 +108,7 @@ export function Footer() {
             </div>
 
             <div className="lg:col-span-1">
-              <h3 className="font-medium text-lg mb-4">Resources</h3>
+              <h3 className="font-medium text-lg mb-4">       {t("footer.resources")}</h3>
               <ul className="space-y-3">
                 <li>
                   <Link
