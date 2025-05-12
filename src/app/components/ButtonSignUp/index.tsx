@@ -12,7 +12,6 @@ interface ButtonSignUpProps {
 }
 
 export default function ButtonSignUp({
-  title,
   className,
   ariaLabel,
 }: ButtonSignUpProps) {

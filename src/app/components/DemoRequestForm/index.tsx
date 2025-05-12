@@ -18,10 +18,6 @@ type createUserFormData = z.infer<typeof createUserFormSchema>;
 
 export default function DemoRequestForm() {
   const [isSuccessModalOpen, setIsSuccessModalOpen] = useState(false);
-  const [formData, setFormData] = useState({
-    email: "",
-    message: "",
-  });
 
   const { t } = useLocalization();
 
@@ -34,9 +30,8 @@ export default function DemoRequestForm() {
     resolver: zodResolver(createUserFormSchema),
   });
 
-  const onSubmit = (data: any) => {
+  const onSubmit = () => {
     reset({ email: "", message: "" });
-    setFormData(data);
     setIsSuccessModalOpen(true);
   };
 
@@ -55,7 +50,6 @@ export default function DemoRequestForm() {
             </h2>
             <h3 className="primary-color my-2 text-base font-normal">
               {t("form.requessub")}
-              <span className="font-medium">{formData.email}</span>.
             </h3>
             <button
               onClick={closeModal}
